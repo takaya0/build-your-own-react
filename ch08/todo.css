@@ -1,0 +1,58 @@
+/*
+ * 本書の画面の図を撮るときに当てた最小限の CSS。本文では解説していない。
+ * index.html から読み込んでいるので、画面は本文の図と同じ見た目になる。
+ * 第1章と同じく、クラスは外側の .todo-app だけに付ける前提で、中は要素のセレクタで書く。
+ * 紙面はモノクロなので、色ではなく線と余白で区切る。
+ */
+.todo-app {
+  font-family: system-ui, sans-serif;
+  max-width: 420px;
+  margin: 16px;
+  padding: 12px;
+  color: #000;
+}
+
+.todo-app h1 {
+  font-size: 24px;
+  margin: 0 0 12px;
+}
+
+.todo-app input {
+  font-size: 16px;
+  padding: 6px 8px;
+  width: 260px;
+  border: 1px solid #000;
+  border-radius: 4px;
+}
+
+.todo-app button {
+  font-size: 16px;
+  padding: 4px 10px;
+  margin-left: 8px;
+  border: 1px solid #000;
+  border-radius: 4px;
+  background: #fff;
+}
+
+.todo-app ul {
+  list-style: none;
+  padding: 0;
+  margin: 16px 0 0;
+}
+
+.todo-app li {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 0;
+  border-bottom: 1px solid #000;
+}
+
+.todo-app li span {
+  flex: 1;
+  font-size: 16px;
+}
+
+.todo-app li button {
+  margin-left: 0;
+}
